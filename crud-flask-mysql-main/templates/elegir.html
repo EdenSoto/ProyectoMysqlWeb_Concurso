@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/styles.css')}}" media="screen" />
+  </head>
+  <body>
+    
+
+    <section class="form-login">
+      <h5>Elegir tipo de Examen</h5>
+      <form action="  " method="post">
+
+          
+
+          <!-- main mysql-->
+          
+          <p><a href="{{url_for('examen3')}} "> <b>Preguntas con alterantiva </b></a></p>
+
+
+          <p><a href="{{url_for('examen1')}} "><b>Preguntas con elección </b> </a></p>
+
+          <p><a href="{{url_for('examen2')}} "><b>Preguntas Escritas</b> </a></p>
+
+          <p><a href="{{url_for('examen3')}} "><b>Preguntas con orden </b> </a></p>
+          
+         
+      </form>
+
+    </section>
+
+  </body>
+</html>

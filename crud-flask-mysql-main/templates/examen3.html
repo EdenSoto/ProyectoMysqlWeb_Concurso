@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Poner un block para que luego pueda ser remplazado en las siguientes plantillas; lo mismo con el  block contenido-->
+    <title>Concurso - {% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/styles.css')}}" media="screen" />
+  </head>
+  <body>
+    <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href=" " class="navbar-item">
+                <img alt="CONCURSO"
+                    src="https://www.santander.com.ar/banco/wcm/connect/5c1b59da-4694-4f37-88bc-57c4dc8519a2/wf30_centrales_488x330.png?MOD=AJPERES&CACHEID=5c1b59da-4694-4f37-88bc-57c4dc8519a2 "
+                    style="max-height: 80px" />
+            </a>
+            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{{url_for('concurso')}}" > Concurso </a>
+            </div>
+            
+
+          
+            <div class="navbar-start">
+                <a class="navbar-item" href="{{url_for('participante')}}"> Participante </a>
+            </div>
+            <div class="navbar-start">
+                <a class="navbar-item" href=" {{url_for('examen')}}"> Examen </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href=" " class="button is-primary">
+
+                            <strong onClick="alert('¡Este es una página de CONCURSOS donde mides tus habilidades!')" >Ayuda </strong>
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section style="" class="body current" id="wizard-p-0" role="tabpanel" aria-labelledby="wizard-h-0" aria-hidden="false">
+       </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_1">
+      <div class="m_header_step" data-step="1">
+        <h1 class="js_error_placement quizz_question "> <center>Responder Preguntas</center></h1>
+        
+      </div>
+      <center>
+      <section style="display: block;" class="body current" id="wizard-p-9" role="tabpanel" aria-labelledby="wizard-h-9" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_10">
+      <div class="m_header_step" data-step="10">
+        <h1 class="js_error_placement quizz_question required_field">
+            1.¿Quién era el general de los Nazis en la Segunda Guerra Mundial?
+        </h1>
+</div>
+
+      <div class="m_options js_quizz_question">
+        <ul>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36479" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36479" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36479">Benito Mussolini</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36480" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36480" aria-required="true"
+              ><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36480">Adolf Hitler/label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36481" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36481" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36481">Heinrich Himmler</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36482" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36482" aria-required="true"><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36482">Alan García</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+<center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-9" role="tabpanel" aria-labelledby="wizard-h-9" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_10">
+      <div class="m_header_step" data-step="10">
+        <h1 class="js_error_placement quizz_question required_field">
+            2.¿Cuál es el nombre del río más largo del mundo? 
+        </h1>
+</div>
+
+      <div class="m_options js_quizz_question">
+        <ul>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36479" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36479" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36479">Río Nilo</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36480" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36480" aria-required="true"
+              ><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36480">Río Amazonas</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36481" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36481" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36481">Río Danubio</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36482" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36482" aria-required="true"><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36482">Río Aura</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+<center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-9" role="tabpanel" aria-labelledby="wizard-h-9" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_10">
+      <div class="m_header_step" data-step="10">
+        <h1 class="js_error_placement quizz_question required_field">
+            3.¿Cuál es el país más grande del mundo? 
+        </h1>
+</div>
+
+      <div class="m_options js_quizz_question">
+        <ul>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36479" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36479" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36479">China</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36480" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36480" aria-required="true"
+              ><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36480">Rusia</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36481" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36481" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36481">India</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36482" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36482" aria-required="true"><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36482">Brasil</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+<center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-9" role="tabpanel" aria-labelledby="wizard-h-9" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_10">
+      <div class="m_header_step" data-step="10">
+        <h1 class="js_error_placement quizz_question required_field">
+            4.¿Cuál es la única ciudad que está en dos continentes distintos? 
+        </h1>
+</div>
+
+      <div class="m_options js_quizz_question">
+        <ul>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36479" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36479" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36479">Sevilla</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36480" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36480" aria-required="true"
+              ><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36480">Valencia</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36481" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36481" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36481">Moscú</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36482" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36482" aria-required="true"><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36482">Estambul</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+<center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-9" role="tabpanel" aria-labelledby="wizard-h-9" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_10">
+      <div class="m_header_step" data-step="10">
+        <h1 class="js_error_placement quizz_question required_field">
+            5.¿En qué país se usó la primera bomba atómica?
+        </h1>
+</div>
+
+      <div class="m_options js_quizz_question">
+        <ul>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36479" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36479" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36479">Rusia</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36480" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36480" aria-required="true"
+              ><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36480">Estados Unidos</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36481" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36481" aria-required="true">
+              <label class="m_option_label" for="participation_promo_response_attributes_response_11737_36481">Japón</label>
+            </div>
+          </li>
+          <li>
+            <div class="m_option js_ok_ko_class_placement">
+              <input class="m_option_input js_quizz_radio" data-msg-required="Choose one of the options" required="required" type="radio" value="36482" name="participation[promo_response_attributes][response_11737]" id="participation_promo_response_attributes_response_11737_36482" aria-required="true"><label class="m_option_label" for="participation_promo_response_attributes_response_11737_36482">China</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+<center>
+
+  
+
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_1">
+      <div class="m_header_step" data-step="1">
+        <h1 class="js_error_placement quizz_question "> <center>-----------------------------------------------------------------------</center></h1>
+        
+      </div>
+      
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_1">
+      <div class="m_header_step" data-step="1">
+        <h1 class="js_error_placement quizz_question "> <center>Responder Preguntas</center></h1>
+        
+      </div>
+      
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+  <center>
+  <p><button type="submit">Enviar Respuestas</button></p>
+  </center>
+   </section>
+
+    
+
+  </body>
+</html>

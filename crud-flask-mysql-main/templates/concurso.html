@@ -1,0 +1,53 @@
+
+
+{% extends "maestra.html" %}
+{% block titulo %} CONCURSO {% endblock %}
+{% block contenido %}
+
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="is-size-3">CONCURSO</h3>
+            <a href="{{url_for('formulario_agregar_concurso')}}" class="button is-success">Agregar</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Ciudad</th>
+                        <th>Región</th>
+                        <th>Fecha Inicio</th>
+                        <th>Fecha Termino</th>
+                        <th>Puntaje Esperado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for concurso in concurso %}
+                    <tr>
+                        <td>{{concurso[1]}}</td>
+                        <td>{{concurso[2]}}</td>
+                        <td>{{concurso[3]}}</td>
+                        <td>{{concurso[4]}}</td>
+                        <td>{{concurso[5]}}</td>
+                        <td>{{concurso[6]}}</td>
+                        <td>{{concurso[7]}}</td>
+                        <td>
+                            {# Pasar el id (lo que hay en concurso[0] #}
+                            <a href="{{url_for('editar_concurso', idconcurso=concurso[0])}}" class="button is-info">Editar</a>
+                        </td>
+                        <td>
+                            <form action="{{url_for('eliminar_concurso')}}" method="POST">
+                                <input type="hidden" name="idconcurso" value="{{concurso[0]}}">
+                                <button class="button is-danger">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{% endblock %}

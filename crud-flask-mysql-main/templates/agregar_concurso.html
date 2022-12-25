@@ -1,0 +1,33 @@
+<!-- main-Mysql-->
+
+{% extends "maestra.html" %}
+{% block titulo %}
+Agregar Concurso
+{% endblock %}
+{% block contenido %}
+<section class="section">
+    <div class="columns">
+        <div class="column is-one-third">
+            <h3 class="is-size-3">Agregar Concurso </h3>
+            <form action="{{url_for('guardar_concurso')}}" method="post"> <!-- main mysql-->
+                <label for="nombre">Nombre:</label>
+                <input required type="text" class="input" placeholder="Nombre" name="nombre" id="nombre">
+                <label for="descripcion">Descripción</label>
+                <input required type="text" class="input" placeholder="Descripción" name="descripcion" id="descripcion">
+                <label for="precio">Ciudad</label>
+                <input required type="text" class="input" placeholder="Ciudad" name="ciudad" id="ciudad">
+                <label for="descripcion">Región</label>
+                <input required type="text" class="input" placeholder="Región" name="region" id="region">
+                <label for="descripcion">Fecha Inicio</label>
+                <input required type="date" class="input" placeholder="Fecha Inicio" name="fechaInicio" id="fechaInicio">
+                <label for="descripcion">Fecha Termino</label>
+                <input required type="date" class="input" placeholder="Fecha Termino" name="fechaTermino" id="fechaTermino">
+                <label for="descripcion">Puntaje Esperado</label>
+                <input required type="number" class="input" placeholder="Puntaje Esperado" name="puntajeEsperado" id="puntajeEsperado">
+                <button type="submit" class="button is-success mt-2">Guardar</button>
+                <a href="{{url_for('concurso')}}" class="button is-primary mt-2">Volver</a> <!-- main mysql-->
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

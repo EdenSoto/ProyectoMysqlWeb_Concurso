@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Poner un block para que luego pueda ser remplazado en las siguientes plantillas; lo mismo con el  block contenido-->
+    <title>Concurso - {% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/styles.css')}}" media="screen" />
+  </head>
+  <body>
+    <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href=" " class="navbar-item">
+                <img alt="CONCURSO"
+                    src="https://www.santander.com.ar/banco/wcm/connect/5c1b59da-4694-4f37-88bc-57c4dc8519a2/wf30_centrales_488x330.png?MOD=AJPERES&CACHEID=5c1b59da-4694-4f37-88bc-57c4dc8519a2 "
+                    style="max-height: 80px" />
+            </a>
+            <button class="navbar-burger is-warning button" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="{{url_for('concurso')}}" > Concurso </a>
+            </div>
+            
+
+          
+            <div class="navbar-start">
+                <a class="navbar-item" href="{{url_for('participante')}}"> Participante </a>
+            </div>
+            <div class="navbar-start">
+                <a class="navbar-item" href=" {{url_for('examen')}}"> Examen </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href=" " class="button is-primary">
+
+                            <strong onClick="alert('¡Este es una página de CONCURSOS donde mides tus habilidades!')" >Ayuda </strong>
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section style="" class="body current" id="wizard-p-0" role="tabpanel" aria-labelledby="wizard-h-0" aria-hidden="false">
+       </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_1">
+      <div class="m_header_step" data-step="1">
+        <h1 class="js_error_placement quizz_question "> <center>Responder Preguntas</center></h1>
+        
+      </div>
+      <center>
+      <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_2">
+      <div class="m_header_step" data-step="2">
+        <h1 class="js_error_placement quizz_question required_field">1.¿Cuál es el nombre del río más largo del mundo?
+          <label id="participation_promo_response_attributes_response_11731-error" class="step_error" for="participation_promo_response_attributes_response_11731" style="display: none;"></label>
+        </h1>
+      </div>
+      <div class="form_fields select_row">
+        <div class="form_select">
+          <div class="field_wrap select_field  ">
+            <span class="select platform platform57 not_msie custom-form_participation_promo_response_attributes_response_11731 responsive_select">
+              <span class="select_content">
+                <span class="select_button">
+                  <span class="select_button_icon"></span>
+                </span>
+              </span>
+            </span>
+            <span class="select_label">
+              <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
+                <option value=""></option>
+                <option value="Hotel">Río Nilo</option>
+                <option value="Hostal">Río Amazonas</option>
+                
+                <option value="Apartamento">Río Danubio</option>
+                <option value="Couchsurfing">Río Aura</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+</center>
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_2">
+      <div class="m_header_step" data-step="2">
+        <h1 class="js_error_placement quizz_question required_field">2.¿Cuál es el país más grande del mundo?
+          <label id="participation_promo_response_attributes_response_11731-error" class="step_error" for="participation_promo_response_attributes_response_11731" style="display: none;"></label>
+        </h1>
+      </div>
+      <div class="form_fields select_row">
+        <div class="form_select">
+          <div class="field_wrap select_field  ">
+            <span class="select platform platform57 not_msie custom-form_participation_promo_response_attributes_response_11731 responsive_select">
+              <span class="select_content">
+                <span class="select_button">
+                  <span class="select_button_icon"></span>
+                </span>
+              </span>
+            </span>
+            <span class="select_label">
+              <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
+                <option value=""></option>
+                <option value="Hotel">China</option>
+                <option value="Hostal">Rusia</option>
+                
+                <option value="Apartamento">India</option>
+                <option value="Couchsurfing">Brasil</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+</center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_2">
+      <div class="m_header_step" data-step="2">
+        <h1 class="js_error_placement quizz_question required_field">3.¿Cuál es el país más poblado de la tierra?
+          <label id="participation_promo_response_attributes_response_11731-error" class="step_error" for="participation_promo_response_attributes_response_11731" style="display: none;"></label>
+        </h1>
+      </div>
+      <div class="form_fields select_row">
+        <div class="form_select">
+          <div class="field_wrap select_field  ">
+            <span class="select platform platform57 not_msie custom-form_participation_promo_response_attributes_response_11731 responsive_select">
+              <span class="select_content">
+                <span class="select_button">
+                  <span class="select_button_icon"></span>
+                </span>
+              </span>
+            </span>
+            <span class="select_label">
+              <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
+                <option value=""></option>
+                <option value="Hotel">Estados Unidos</option>
+                <option value="Hostal">Rusia</option>
+                
+                <option value="Apartamento">China</option>
+                <option value="Couchsurfing">Perú</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+</center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_2">
+      <div class="m_header_step" data-step="2">
+        <h1 class="js_error_placement quizz_question required_field">4.¿Cuál es la única ciudad que está en dos continentes distintos?
+          <label id="participation_promo_response_attributes_response_11731-error" class="step_error" for="participation_promo_response_attributes_response_11731" style="display: none;"></label>
+        </h1>
+      </div>
+      <div class="form_fields select_row">
+        <div class="form_select">
+          <div class="field_wrap select_field  ">
+            <span class="select platform platform57 not_msie custom-form_participation_promo_response_attributes_response_11731 responsive_select">
+              <span class="select_content">
+                <span class="select_button">
+                  <span class="select_button_icon"></span>
+                </span>
+              </span>
+            </span>
+            <span class="select_label">
+              <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
+                <option value=""></option>
+                <option value="Hotel">Moscú</option>
+                <option value="Hostal">Tokio</option>
+                
+                <option value="Apartamento">Estambul</option>
+                <option value="Couchsurfing">Berlín</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+</center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_2">
+      <div class="m_header_step" data-step="2">
+        <h1 class="js_error_placement quizz_question required_field">5.¿Quién era el general de los Nazis en la Segunda Guerra Mundial?
+          <label id="participation_promo_response_attributes_response_11731-error" class="step_error" for="participation_promo_response_attributes_response_11731" style="display: none;"></label>
+        </h1>
+      </div>
+      <div class="form_fields select_row">
+        <div class="form_select">
+          <div class="field_wrap select_field  ">
+            <span class="select platform platform57 not_msie custom-form_participation_promo_response_attributes_response_11731 responsive_select">
+              <span class="select_content">
+                <span class="select_button">
+                  <span class="select_button_icon"></span>
+                </span>
+              </span>
+            </span>
+            <span class="select_label">
+              <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
+                <option value=""></option>
+                <option value="Hotel">Benito Mussolini</option>
+                <option value="Hostal">Adolf Hitler</option>
+                
+                <option value="Apartamento">Heinrich Himmler</option>
+                <option value="Couchsurfing">Alan García</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+</center>
+
+<center>
+      <section style="display: block;" class="body current" id="wizard-p-1" role="tabpanel" aria-labelledby="wizard-h-1" aria-hidden="false">
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_2">
+      <div class="m_header_step" data-step="2">
+        <h1 class="js_error_placement quizz_question required_field">6.¿En qué país se usó la primera bomba atómica?
+          <label id="participation_promo_response_attributes_response_11731-error" class="step_error" for="participation_promo_response_attributes_response_11731" style="display: none;"></label>
+        </h1>
+      </div>
+      <div class="form_fields select_row">
+        <div class="form_select">
+          <div class="field_wrap select_field  ">
+            <span class="select platform platform57 not_msie custom-form_participation_promo_response_attributes_response_11731 responsive_select">
+              <span class="select_content">
+                <span class="select_button">
+                  <span class="select_button_icon"></span>
+                </span>
+              </span>
+            </span>
+            <span class="select_label">
+              <select data-custom="true" data-msg-required="Required field" required="required" name="participation[promo_response_attributes][response_11731]" id="participation_promo_response_attributes_response_11731" aria-required="true" class="step_error">
+                <option value=""></option>
+                <option value="Hotel">Rusia</option>
+                <option value="Hostal">Estados Unidos</option>
+                
+                <option value="Apartamento"> Japón</option>
+                <option value="Couchsurfing">China</option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+</section>
+</center>
+<center>-----------------------------------------------------------------------</center></h1>
+        
+      </div>
+      
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+  <div class="wrapper_row" style="">
+    <div class="row js_error_placement_parent step_1">
+      <div class="m_header_step" data-step="1">
+        <h1 class="js_error_placement quizz_question "> <center>Responder Preguntas</center></h1>
+        
+        
+      </div>
+      
+    </div><!-- - class=row -->
+  </div><!-- - class=wrapper_row -->
+  <center>
+  <p><button type="submit">Enviar Respuestas</button></p>
+  </center>
+   </section>
+
+    
+
+  </body>
+</html>

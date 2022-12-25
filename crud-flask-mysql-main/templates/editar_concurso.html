@@ -1,0 +1,34 @@
+<!-- placeholder "nombre se fondo en formulario"-->
+{% extends "maestra.html" %}
+{% block titulo %}
+Editar juego
+{% endblock %}
+{% block contenido %}
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="is-size-3">Editar concurso</h3>
+            <form action="{{url_for('actualizar_concurso')}}" method="post">
+                {# Enviar el id en un campo oculto #}
+                <input type="hidden" name="id" value="{{concurso[0]}}">
+                <label for="nombre">Nombre:</label>
+                <input value="{{concurso[1]}}" required type="text" class="input" placeholder="Nombre" name="nombre" id="nombre">
+                <label for="descripcion">Descripción</label>
+                <input value="{{concurso[2]}}" required type="text" class="input" placeholder="Descripción" name="descripcion" id="descripcion">
+                <label for="ciudad">Ciudad</label>
+                <input value="{{concurso[3]}}" required type="text" class="input" placeholder="Ciudad" name="ciudad" id="ciudad">
+                <label for="region">Region</label>
+                <input value="{{concurso[4]}}" required type="text" class="input" placeholder="Región" name="region" id="region">
+                <label for="fechaInicio">Fecha Inicio</label>
+                <input value="{{concurso[5]}}" required type="date" class="input" placeholder="Fecha Inicio" name="fechaInicio" id="fechaInicio">
+                <label for="fechaTermino">Fecha Termino</label>
+                <input value="{{concurso[6]}}" required type="date" class="input" placeholder="Fecha Termino" name="fechaTermino" id="fechaTermino">
+                <label for="puntajeEsperado">Puntaje Esperado</label>
+                <input value="{{concurso[7]}}" required type="number" class="input" placeholder="Puntaje Esperado" name="puntajeEsperado" id="puntajeEsperado">
+                <button type="submit" class="button is-success mt-2">Guardar</button>
+                <a href="{{url_for('concurso')}}" class="button is-primary mt-2">Volver</a>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
